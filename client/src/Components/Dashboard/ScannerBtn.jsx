@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import "../../CSS/scanner.css";
-import Stats from "./Stats"
 
 const Scanner = () => {
   const [boxes, setBoxes] = useState([]);

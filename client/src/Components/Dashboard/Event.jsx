@@ -59,7 +59,7 @@ const Event = ({ events }) => {
           </h5>
           <h5 className="font-normal text-sm mb-5  text-gray-400">
             {event.time}
-          </h5>
+          </h5> 
           <div className="border-dashed border-2 border-sky-500 border-y-2"></div>
         </div>
       ))}

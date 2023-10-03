@@ -2,28 +2,8 @@ import React from 'react';
 import {useNavigate } from 'react-router-dom';
 import "../../CSS/logout.css"
 function Logout() {
-    const navigate = useNavigate;
     const token = localStorage.getItem("token");
     const handleLogout = async () => {
-    //    try {
-    //     const response = await fetch('/api/logout',{
-    //         method: 'GET',
-    //         headers: {
-    //             "x-access-token": token
-    //           },
-    //         credentials: 'include'
-    //     });
-    //     if(response.status === 200) {
-    //         window.location.href = '/logout';
-    //     }
-    //     else {
-    //         const errorResponse = await response.json(); 
-    //         throw new Error(`Logout failed: ${errorResponse.message}`);
-    //       }
-    //    } 
-    //    catch (error) {
-    //         console.error(error);
-    //    }
     localStorage.removeItem('token'); 
     window.location.href = '/'; 
     }
